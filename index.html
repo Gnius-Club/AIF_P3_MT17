@@ -1,379 +1,419 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook-P3-TM17</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+<header>
+    <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 17 Primaria 3º</strong></h1>
+    <div class="header-widgets">
+        <div class="timer-container">
+            <span id="timer">⏱️ 00:00</span>
+            <button id="startStop">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle-input">
+                <span class="slider round"></span>
+            </label>
+            <i class="fas fa-moon"></i>
+        </div>
+    </div>
+</header>
 
-    <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 17 3ro Primaria</strong></h1>
-        <div class="header-widgets">
-            <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
-            </div>
-            <div class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle-input">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fas fa-moon"></i>
+<div class="main-container">
+    <aside class="activity-list">
+        <h2>Actividades</h2>
+        <ul>
+            <li><a href="#activity-0">📝</a></li>
+            <li><a href="#activity-1">1</a></li>
+            <li><a href="#activity-2">2</a></li>
+            <li><a href="#activity-3">3</a></li>
+            <li><a href="#activity-4">4</a></li>
+            <li><a href="#activity-5">5</a></li>
+        </ul>
+
+        <div class="sidebar-info">
+            <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+            <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+        <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+        <div class="activity-card" id="activity-0">
+            <h2><span class="book-icon">📝</span> De un Vistazo: ¿El Micro:bit Realmente Entiende?</h2>
+            <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+            <div class="overview-table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                            <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Objetivos de Aprendizaje:</strong>
+                                <ul>
+                                    <li>IA (A.I. GYM - Discusión): Percepción vs. Comprensión: El Micro:bit (con Create A.I.) reconoce un patrón (movimiento del acelerómetro o sonido), ¿pero "entiende" lo que significa para nosotros?</li>
+                                    <li>Proyecto: Un juego donde un movimiento o sonido tiene un significado específico.</li>
+                                    <li>Parte de la Currícula de IA (Primaria 3 - AIA y Adaptaciones) cubierta: AIA: IA en la Vida Cotidiana (Adaptado): Comprensión de limitaciones de la IA.</li>
+                                    <li>Objetivo General de la Sesión: Que los estudiantes exploren la diferencia entre percibir (reconocer patrones de movimiento o sonido) y comprender (dar significado) en los sistemas de IA, reflexionando sobre lo que el Micro:bit realmente "sabe" cuando reconoce un movimiento o sonido con Create A.I., y aplicando esto en un juego simple pero significativo.</li>
+                                </ul>
+                                <strong>Tácticas Principales:</strong>
+                                <ul>
+                                    <li><strong class="tactic-highlight">Saludo de I.A. con todos</strong></li>
+                                    <li><strong class="tactic-highlight">I Can Statement + Ejemplificación</strong></li>
+                                    <li><strong class="tactic-highlight">AI GYM</strong></li>
+                                    <li><strong class="tactic-highlight">Brain Spark</strong></li>
+                                    <li><strong class="tactic-highlight">Gnius STORM</strong></li>
+                                </ul>
+                                <strong>Entregable Clave:</strong>
+                                <ul>
+                                    <li>Un juego de preguntas y respuestas programado en Micro:bit, utilizando Create A.I. para reconocer gestos o sonidos personalizados como respuestas, y una reflexión sobre la diferencia entre la percepción de patrones por la IA y la comprensión humana del significado.</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <strong>Materiales Específicos:</strong>
+                                <ul>
+                                    <li>Proyector o pantalla interactiva.</li>
+                                    <li>Conexión a internet estable.</li>
+                                    <li>Chat de "Agente Gnius" (Xolo IA) activo y funcionando.</li>
+                                    <li>Presentación de diapositivas (Diapositivas 1-9 propuestas).</li>
+                                    <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                    <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                    <li>Acceso a Create A.I. (<a href="https://createai.microbit.org/" target="_blank">https://createai.microbit.org/</a>) (para entrenamiento de gestos/sonidos).</li>
+                                    <li>Micro:bit V2 . </li>
+                                </ul>
+                                <strong>Preparación Previa para ESTA Sesión:</strong>
+                                <ol>
+                                    <li><strong>Revisión de Misión (Interna):</strong>
+                                        <ul>
+                                            <li>Verificar conexión a internet.</li>
+                                            <li>Confirmar acceso y funcionamiento de MakeCode y Create A.I.</li>
+                                            <li>Asegurar disponibilidad y carga de los Micro:bits/baterías .</li>
+                                            <li>Tener la presentación de diapositivas (1-9) lista y en orden.</li>
+                                            <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional un proyecto de ejemplo donde un Micro:bit reconoce un gesto/sonido (entrenado con Create A.I.) y reacciona de alguna manera. Este ejemplo servirá para ilustrar la diferencia entre percepción (el Micro:bit detecta el patrón) y comprensión (el Micro:bit no entiende el significado humano del gesto/sonido) durante la Actividad 2.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </header>
+        <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
 
-    <div class="main-container">
-        <aside class="activity-list">
-            <h2>Actividades</h2>
-            <ul>
-                <li><a href="#activity-0">📝</a></li>
-                <li><a href="#activity-1">1</a></li>
-                <li><a href="#activity-2">2</a></li>
-                <li><a href="#activity-3">3</a></li>
-                <li><a href="#activity-4">4</a></li>
-                <li><a href="#activity-5">5</a></li>
-            </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
-        </aside>
-
-        <main class="content">
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                        <li>IA (A.I. GYM - Discusión): Percepción vs. Comprensión: El Micro:bit (con Create A.I.) reconoce un patrón (movimiento del acelerómetro o sonido), ¿pero "entiende" lo que significa para nosotros?</li>
-                                        <li>Proyecto: Un juego donde un movimiento o sonido tiene un significado específico.</li>
-                                        <li>AIA: IA en la Vida Cotidiana (Adaptado): Comprensión de limitaciones de la IA.</li>
-                                        <li>Objetivo General de la Sesión: Que los estudiantes exploren la diferencia entre percibir (reconocer patrones de movimiento o sonido) y comprender (dar significado) en los sistemas de IA, reflexionando sobre lo que el Micro:bit realmente "sabe" cuando reconoce un movimiento o sonido con Create A.I., y aplicando esto en un juego simple pero significativo.</li>
-                                    </ul>
-                                    <strong>Tácticas Principales:</strong>
-                                    <ul>
-                                        <li><strong class="tactic-highlight">Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
-                                        <li><strong class="tactic-highlight">"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
-                                        <li><strong class="tactic-highlight">AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y bloques.</li>
-                                        <li><strong class="tactic-highlight">Brain Spark:</strong> Proceso de ideación, diseño (GCS con IA) y programación individual.</li>
-                                        <li><strong class="tactic-highlight">Gnius STORM (Think-Pair-Share):</strong> Compartición, prueba y retroalimentación de proyectos.</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Un juego de preguntas y respuestas en Micro:bit donde se usan movimientos o sonidos personalizados (entrenados con Create A.I.) para responder, y una reflexión sobre la diferencia entre el reconocimiento de patrones del Micro:bit y la comprensión humana.</li>
-                                        <li>Retroalimentación recibida y dada durante Gnius STORM.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Chat de "Agente Gnius" (Xolo IA) activo y funcionando.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-16 propuestas para esta sesión).</li>
-                                        <li>Micro:bits (V2 recomendado para reconocimiento de sonido) y baterías.</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
-                                        <li>Acceso a Create A.I. (<a href="https://createai.microbit.org/" target="_blank">https://createai.microbit.org/</a>).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de MakeCode y Create A.I.</li>
-                                                <li>Asegurar disponibilidad y carga de Micro:bits/baterías (especialmente si se usa sonido, verificar V2).</li>
-                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad, especialmente el proceso de entrenamiento de movimientos/sonidos en Create A.I.</li>
-                                        <li><strong>Ejemplo Profesor:</strong> Tener un proyecto simple en Micro:bit que reaccione a un movimiento (ej. inclinar) o a un sonido simple (ej. un aplauso) que el profesor pueda realizar en vivo. Este ejemplo debe ilustrar el concepto de "reconocimiento de patrón" sin necesidad de un modelo Create A.I. complejo, para centrar la discusión en la percepción vs. comprensión.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>El chatbot da la bienvenida y plantea la pregunta central sobre la comprensión de la IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Saludo del Profesor e Instrucción a Xolo ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 2). Saludar a los alumnos y dar la instrucción de recordar su perfil a la IA y saludarla.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a una misión para pensar profundo! Como siempre, activaremos a Xolo. Salúdenlo y recuérdenle su perfil.</p>
-                            </div>
+        <div class="activity-card" id="activity-1">
+            <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+            <p>El chatbot da la bienvenida, introduce la temática de percepción vs. comprensión, y activa a los alumnos.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Saludo de I.A. con todos</h3>
+                        <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce la intrigante pregunta del día sobre la comprensión de la IA, e instrúyeles claramente cómo activar a Xolo con su Nombre y gustos/intereses.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Hola, pensadores profundos! 👋 Ya hicimos que el Micro:bit detecte movimientos que le enseñamos (como agitarlo o inclinarlo) y reconozca sonidos con Create A.I. ¡Suena muy inteligente! Pero hoy vamos a hacer una pregunta importante: ¿el Micro:bit realmente entiende lo que esos movimientos o sonidos significan para nosotros? ¡Vamos a explorar la diferencia entre detectar algo y entenderlo! Antes de sumergirnos, activaremos a nuestro copiloto, Xolo. Recuerden saludarlo y compartir lo que más les gusta o interesa para que la misión sea más personalizada. Escriban en el chat: "Hola Xolo, mis gustos/intereses son..."</p>
                         </div>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Respuesta de Xolo y Verificación ⏰ 2.5 minutos</h3>
-                            <p>(Los alumnos interactúan con Xolo. El profesor monitorea).</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">¡Excelente! Xolo ya les está respondiendo: "¡Hola, pensadores profundos! Ya hicimos que el Micro:bit detecte movimientos que le enseñamos (como agitarlo o inclinarlo) y reconozca sonidos con Create A.I. ¡Suena muy inteligente! Pero hoy vamos a hacer una pregunta importante: ¿el Micro:bit realmente entiende lo que esos movimientos o sonidos significan para nosotros? ¡Vamos a explorar la diferencia entre detectar algo y entenderlo!" ¿Todos recibieron el saludo de Xolo? Si alguien tiene problemas, avíseme.</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Saludo de I.A. con todos</h3>
+                        <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Genial! Veo que Xolo ya está conversando con ustedes y listo para esta aventura de pensamiento. Si alguien no ha recibido respuesta de Xolo, ¡levante la mano!</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: Introducción de la Misión con "I Can Statement" ⏰ 5 minutos</h2>
-                <p>Presentar la diferencia entre reconocimiento de patrones y comprensión, y el objetivo de la clase.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: El Significado de los Movimientos y Sonidos - Demostración del Profesor ⏰ 2.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 3). El profesor explica la diferencia entre cómo los humanos y el Micro:bit interpretan los movimientos o sonidos, y realiza una demostración en vivo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Cuando inclinamos el Micro:bit hacia arriba (hacer el gesto con un Micro:bit), o hacemos un sonido como '¡Sí!' (hacer el sonido), para nosotros significa una respuesta positiva, ¿verdad? Ahora, miren este Micro:bit que tengo aquí. (El profesor realiza el movimiento o sonido simple que preparó con su Micro:bit, y este reacciona mostrando algo en la pantalla, ej. un icono). Vieron que reaccionó. Pero, cuando el Micro:bit reconoce este movimiento o sonido, ¿realmente sabe lo que yo quise decir con 'sí' o con este movimiento? ¿O solo sabe que ese patrón de movimiento o sonido se parece a algo que le programé para que reconociera? Hoy vamos a jugar con esta idea.</p>
-                            </div>
+        <div class="activity-card" id="activity-2">
+            <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+            <p>Presentar el objetivo de aprendizaje ('I Can Statement') y ejemplificar la diferencia entre percepción y comprensión con un proyecto del profesor.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Introducción y Contextualización</h3>
+                        <p>(Proyectar Diapositiva 3). Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Cuando inclinamos el Micro:bit hacia arriba, o hacemos un sonido como '¡Sí!', para nosotros significa una respuesta positiva. Pero cuando el Micro:bit lo reconoce, ¿realmente sabe lo que queremos decir? ¿O solo sabe que ese patrón de movimiento o sonido se parece a otros que le enseñaste antes? Hoy vamos a jugar con esta idea.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: "I Can Statement" ⏰ 2.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 4). El profesor presenta el "I Can Statement".</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Presentación del Proyecto del Profesor</h3>
+                        <p>Muestra TU Micro:bit con TU proyecto de ejemplo ya cargado y funcionando, idealmente uno que use Create A.I. para reconocer un gesto/sonido. (Esta es una demostración en vivo, no se proyecta diapositiva).</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Para que vean un ejemplo de cómo el Micro:bit puede 'percibir' algo sin 'entenderlo' realmente, les voy a mostrar un proyecto que yo mismo preparé. Miren mi Micro:bit: (Muestra el dispositivo funcionando con un gesto/sonido entrenado con Create A.I.). Yo le enseñé a reconocer [describe el gesto/sonido que entrenaste, ej: un pequeño saludo con la mano o un aplauso]. Cuando lo hago, el Micro:bit [describe la reacción, ej: muestra una cara feliz o enciende un LED]. Pero, ¿creen que el Micro:bit 'entiende' por qué este gesto [o sonido] es [positivo/negativo/significativo] para mí? Solo reconoce el patrón que le enseñé. Mi vibe fue simple: quería ilustrar cómo una IA puede detectar algo que le enseñamos, pero el significado se lo damos nosotros. ¿Qué creen que el Micro:bit sabe sobre lo que acabo de hacer? ¿Y qué creen que entiende de lo que significa para mí?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Al final de la clase, podrán decir: <strong>"Yo puedo hacer un juego donde mi Micro:bit reconoce un movimiento o un sonido, y puedo explicar que el Micro:bit solo reconoce un patrón, pero no entiende lo que ese patrón significa para mí."</strong></p>
-                            </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 3: "I Can Statement" y Conexión</h3>
+                        <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Así como mi Micro:bit reacciona a mi gesto, ¡ustedes hoy harán algo muy similar y aún más profundo! Al final de la clase, podrán decir con confianza: <strong>"Yo puedo hacer un juego donde mi Micro:bit reconoce un movimiento o un sonido, y puedo explicar que el Micro:bit solo reconoce un patrón, pero no entiende lo que ese patrón significa para mí."</strong> ¡Vamos a ello!</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: A.I. GYM ⏰ 5 minutos</h2>
-                <p>Los alumnos interactúan con Xolo para aprender sobre percepción vs. comprensión en la IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Instrucción para interactuar con Xolo ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 5). Guiar a los alumnos para que pidan la información a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Al A.I. GYM de la mente! 🧠 Xolo nos va a aclarar esta diferencia entre "detectar" y "entender". Escriban en el chat: <strong>'Mi perfil es [escribe aquí tu perfil] y quiero que me expliques la diferencia entre percepción y comprensión en la IA, usando ejemplos de cuando el Micro:bit reconoce un movimiento o un sonido.'</strong></p>
-                            </div>
-                        </div>
+        <div class="activity-card" id="activity-3">
+            <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
+            <p>Que los alumnos, guiados por Xolo, exploren conceptualmente la diferencia entre percepción (reconocimiento de patrones IA) y comprensión (significado humano).</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Instrucción Inicial y Contextualización de la IA</h3>
+                        <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo, incluyendo su perfil y los conceptos del día.</p>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Interacción con Xolo y Preguntas ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositiva 6, 7 y 8 durante la interacción). Los alumnos reciben la explicación de Xolo directamente en el chat.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Muy bien! Xolo les está explicando que cuando entrenan a Create A.I. para un movimiento específico (como un 'saludo secreto') o un sonido (como un aplauso), el Micro:bit no sabe su significado humano (comprensión), solo detecta un patrón en los datos de su acelerómetro o micrófono (percepción). Les está dando el ejemplo del termómetro: una IA en un termómetro puede 'percibir' la temperatura, pero no 'comprende' si es agradable para nosotros. Si tienen dudas sobre por qué la IA no "siente" o no tiene experiencias, ¡pregúntenle a Xolo!<br>
-                                    <strong>* 'Xolo, ¿entonces el Micro:bit nunca podrá entenderme como un amigo?'</strong><br>
-                                    <strong>* '¿Cómo aprende la IA a reconocer el patrón de un movimiento o sonido?'</strong><br>
-                                    <strong>* 'Si le enseño muchos movimientos y sonidos, ¿se vuelve más inteligente en el sentido de comprender?'</strong></p>
-                            </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo, nuestro copiloto IA, nos va a ayudar a profundizar en la diferencia entre cómo una IA 'percibe' y cómo nosotros 'comprendemos'. Para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente comando: 'Xolo, mi perfil es [escribe aquí tu perfil] y quiero que me enseñes sobre percepción y comprensión en la IA.'</p>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Diseñar y programar un juego de preguntas y respuestas con movimientos o sonidos, reflexionando sobre la percepción vs. comprensión.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Vibe del Juego y Entrenamiento de Patrones ⏰ 7 minutos</h3>
-                            <p>(Proyectar Diapositiva 9). Los alumnos definen la vibe de su juego y entrenan movimientos o sonidos en Create A.I.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡A jugar y pensar! Vamos a crear un juego de preguntas. <strong>Su vibe será: "Quiero hacer un juego donde el Micro:bit me pregunte '¿Te gusta programar?' y yo responda con un movimiento de 'sí' (ej. inclinar el Micro:bit hacia arriba) o un sonido de 'no' (ej. un 'no' hablado o un 'zumbido'). El Micro:bit debe mostrar una respuesta según mi entrada."</strong> <br> Primero, necesitan enseñarle esos patrones (movimiento o sonido) al Micro:bit. Vayan a Create A.I. y, con mi guía, entrenen dos patrones: uno llamado "SI_RESPUESTA" (haciendo el movimiento o sonido de 'sí' varias veces) y otro llamado "NO_RESPUESTA" (haciendo el movimiento o sonido de 'no' varias veces). ¡Recuerden grabar también una clase de "Ruido de Fondo" o "NINGUNO" para ayudar a la IA! (El profesor guía el proceso de entrenamiento en Create A.I., asegurándose de que elijan patrones detectables).</p>
-                            </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Interacción Guiada y Ejemplo de GCS</h3>
+                        <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que cuando entrenamos a Create A.I. para reconocer un movimiento específico (como un 'saludo secreto' con el Micro:bit) o un sonido (como un aplauso), el Micro:bit no sabe lo que significa para ustedes. Solo detecta un patrón en los datos de su acelerómetro o de su micrófono que se parece a los ejemplos que le dieron. A eso le llamamos 'percepción'.</p>
+                            <p class="dialogue assistant">Pero la 'comprensión' es algo muy diferente. Es saber por qué hacen ese movimiento o sonido, qué emoción representa, o qué mensaje humano están transmitiendo. Las IAs no tienen emociones ni experiencias humanas, así que no comprenden como nosotros. Una IA en un termómetro puede 'percibir' (detectar) la temperatura de una habitación, pero no 'comprende' que esa temperatura es perfecta para que ustedes jueguen cómodos. Solo detecta el número del sensor.</p>
+                            <p class="dialogue assistant">Para que vean cómo se traduce esa 'percepción' en un Gnius Code Spark (GCS), Xolo podría mostrarles un ejemplo simple de cómo el Micro:bit reacciona a un patrón que aprendió con Create A.I.:</p>
+                            <pre class="dialogue assistant" style="color: #d32f2f;">
+                            
+                            // Ejemplo de cómo Xolo podría explicar el uso de CreateAI
+// Este GCS asume que ya entrenaste un gesto llamado "MI_GESTO_APRENDIDO" en Create A.I.
+POR SIEMPRE:
+SI CreateAI RECONOCE "MI_GESTO_APRENDIDO":
+// El Micro:bit detectó el patrón que le enseñamos
+// ¡Aquí programamos la REACCIÓN a la PERCEPCIÓN!
+mostrar icono CARA_FELIZ
+SINO:
+// No ha detectado el patrón conocido
+// Podríamos no hacer nada o mostrar algo diferente
+limpiar pantalla
+FIN SI
+ESPERAR 0.1 segundos // Pequeña pausa para optimizar
+</pre>
+<p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con: <br>
+<strong>* 'Xolo, dame un ejemplo de algo que el Micro:bit percibe pero no comprende.'</strong><br>
+<strong>* '¿Puedes explicarme percepción con una historia sobre [mi perfil]?'</strong><br>
+<strong>* '¿Qué diferencia hay entre que yo entienda un chiste y que una IA lo detecte como "gracioso"?'</strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+              <div class="activity-card" id="activity-4">
+            <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+            <p>Desarrollar un juego de preguntas donde las respuestas se dan mediante gestos o sonidos personalizados, reconocidos por el Micro:bit a través de Create A.I.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Introducción al Brain Spark</h3>
+                        <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal de la sesión, generando entusiasmo.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos a la parte más emocionante de nuestra misión, el Brain Spark. Aquí es donde cada uno de ustedes se convierte en inventor, usando lo que aprendimos sobre percepción y comprensión para crear su propio juego de preguntas y respuestas, y probarlo en el mundo real con el Micro:bit.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pedir el GCS a Xolo para el Juego ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 10). Instrucción para pedir el GCS a Xolo.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Ideación (La "vibe")</h3>
+                        <p>Anima a los alumnos a pensar en su propio proyecto de juego, basándose en los conceptos del día. El objetivo es la libre exploración de ideas. Mientras los alumnos piensan en sus ideas propias, recuerda que deben organizarse en parejas para usar el Micro:bit y repartir el material si no fue entregado antes.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Ahora que ya saben sobre cómo el Micro:bit puede 'percibir' gestos o sonidos con Create A.I., ¿qué juego se les ocurre donde usen esto para responder preguntas? ¿Un 'Verdadero o Falso' con movimientos? ¿Un juego donde un sonido signifique 'Adivinaste'? Tómense un minuto para pensar en su propia vibe. Si no se les ocurre nada, ¡no hay problema! Pueden pedirle a Xolo: <strong>'Xolo, dame tres ideas de juegos simples que usen Create A.I. para las respuestas.'</strong> Recuerden que compartirán su Micro:bit en parejas, así que recuerden intercambiar para programar.</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">¿Ya entrenaron sus patrones "SI_RESPUESTA" y "NO_RESPUESTA"? ¡Perfecto! Ahora, díganle a Xolo la vibe del juego: <strong>'Xolo, quiero que mi Micro:bit pregunte "¿Te gusta programar?", luego espere mi patrón SI_RESPUESTA o NO_RESPUESTA. Si reconoce SI_RESPUESTA, que diga "¡SI!" y muestre un corazón. Si reconoce NO_RESPUESTA, que diga "¡NO!" y muestre una calavera. Quiero que espere hasta que reconozca uno de los dos patrones.'</strong> Xolo les ayudará a estructurar el GCS.</p>
-                                 <p class="dialogue assistant">Xolo podría generar un GCS como este:</p>
-                                 <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    mostrar texto "PREPARADO"
-    ESPERAR 1 segundo
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 3: Planificación con IA (El "GCS") y Logística</h3>
+                        <p>Guía a los alumnos sobre cómo comunicar su vibe a Xolo para obtener un Gnius Code Spark (GCS). Recuérdales que, al compartir el Micro:bit, deben turnarse para entrenar los modelos en Create A.I. y para programar en MakeCode.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¿Ya tienen su vibe? ¡Genial! Ahora, vamos a pedirle a Xolo que nos ayude a crear el GCS. Describan su idea a Xolo de la forma más clara posible. Por ejemplo, si su vibe es: 'Quiero hacer un juego donde el Micro:bit me pregunte "¿Te gusta programar?" y yo responda con un movimiento de "sí" (ej. inclinar el Micro:bit hacia arriba) o un sonido de "no" (ej. un "no" hablado o un "zumbido"). El Micro:bit debe mostrar una respuesta según mi entrada.' Recuerden que primero deberán entrenar esos gestos o sonidos en Create A.I. con nombres claros, como por ejemplo "SI_RESPUESTA" y "NO_RESPUESTA".</p>
+                            <p class="dialogue assistant">Basado en esa petición, Xolo podría generar un GCS como este. ¡Fíjense bien en cómo se estructura y cómo espera la respuesta!</p>
+                            <pre class="dialogue assistant" style="color: #d32f2f;">
+                            
+                            AL INICIO:
+// Preparamos nuestro juego
+mostrar texto "PREPARADO"
+ESPERAR 1 segundo
 
 POR SIEMPRE:
-    mostrar texto "TE GUSTA PROGRAMAR?"
+// Hacemos la pregunta
+mostrar texto "TE GUSTA PROGRAMAR?"
+ESPERAR 2 segundos // Tiempo para leer la pregunta
+// Bucle para esperar una respuesta (movimiento o sonido)
+mientras (CreateAI NO RECONOCE "SI_RESPUESTA") Y (CreateAI NO RECONOCE "NO_RESPUESTA"):
+    mostrar icono ESPERA // O un icono que parpadea
+    ESPERAR 0.2 segundos
+    limpiar pantalla
+    ESPERAR 0.2 segundos
+FIN MIENTRAS
+
+// Reacciona según el movimiento o sonido reconocido
+SI CreateAI RECONOCE "SI_RESPUESTA":
+    mostrar texto "¡SI!"
+    mostrar icono CORAZON // O un pulgar arriba si el gesto lo permite con el Micro:bit
     ESPERAR 2 segundos
+    limpiar pantalla
+SINO SI CreateAI RECONOCE "NO_RESPUESTA":
+    mostrar texto "¡NO!"
+    mostrar icono CALAVERA // O un pulgar abajo si el gesto lo permite con el Micro:bit
+    ESPERAR 2 segundos
+    limpiar pantalla
+FIN SI
 
-    // Bucle para esperar una respuesta (movimiento o sonido)
-    mientras (CreateAI NO RECONOCE "SI_RESPUESTA") Y (CreateAI NO RECONOCE "NO_RESPUESTA"):
-        mostrar icono ESPERA // O un icono que parpadea
-        ESPERAR 0.2 segundos
-        limpiar pantalla
-        ESPERAR 0.2 segundos
-    FIN MIENTRAS
-
-    // Reacciona según el movimiento o sonido reconocido
-    SI CreateAI RECONOCE "SI_RESPUESTA":
-        mostrar texto "¡SI!"
-        mostrar icono CORAZON // O un pulgar arriba si el gesto lo permite con el Micro:bit
-        ESPERAR 2 segundos
-        limpiar pantalla
-    SINO SI CreateAI RECONOCE "NO_RESPUESTA":
-        mostrar texto "¡NO!"
-        mostrar icono CALAVERA // O un pulgar abajo si el gesto lo permite con el Micro:bit
-        ESPERAR 2 segundos
-        limpiar pantalla
-    FIN SI
-
-    ESPERAR 3 segundos // Pausa antes de repetir la pregunta o reiniciar</pre>
-                                 <p class="dialogue assistant">¡Este GCS usa un bucle `mientras` para esperar el patrón! Vamos a analizarlo bien.</p>
-                            </div>
+ESPERAR 3 segundos // Pausa antes de repetir la pregunta o reiniciar
+                            </pre>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación en MakeCode y Prueba del Juego ⏰ 8 minutes</h3>
-                            <p>(Proyectar Diapositiva 11). Tiempo para traducir el GCS a bloques, probar y reflexionar.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    ¡A construir el juego! Tomen el GCS de Xolo y tradúzcanlo a bloques en MakeCode. Asegúrense de cargar su modelo de Create A.I. en el proyecto de MakeCode (¡Recuerden que para sonido necesitan Micro:bit V2!). Tienen 8 minutos.<br>
-                                    <strong>* Prueben en el Micro:bit físico.</strong> Hagan la pregunta, respondan con el movimiento o sonido. ¿Reconoce bien? ¿Responde como esperaban?<br>
-                                    <strong>* Reflexionen:</strong> Cuando el Micro:bit muestra "¡SI!", ¿realmente "está de acuerdo" o solo reconoció el patrón que le enseñaron? ¡Esta es la clave de hoy!
-                                </p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 4: Implementación y Prueba ⏰ 10 minutos</h3>
+                        <p>(Proyectar Diapositiva 10). Da tiempo a los alumnos para que traduzcan el GCS a bloques en MakeCode, prueben en el simulador y luego en el Micro:bit físico. Anímales a reflexionar si el Micro:bit realmente 'entendió' su respuesta.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen el GCS que les dio Xolo y constrúyanlo con bloques en MakeCode. Prueben primero en el simulador. Cuando funcione, descarguen el código a su Micro:bit y véanlo cobrar vida. Recuerden, si el GCS de Xolo no funciona a la primera, ¡es una oportunidad para depurar! Descríbanle el error a Xolo para que puedan mejorar juntos. Mientras prueban, piensen: ¿el Micro:bit 'entiende' su sí o no, o solo reconoce el patrón que le enseñaron? ¿Qué significa su gesto/sonido para ustedes?</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Mejoras - Más Interacción (Si hay tiempo) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 12). Sugerir mejoras para el juego.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Si su juego funciona, ¡genial! ¿Ideas para mejorarlo? <strong>"¿Puedes hacer que el Micro:bit haga diferentes preguntas y reconozca múltiples movimientos o sonidos?" "¿Puedes agregar un sonido para cada respuesta (además del texto/icono)?" "¿Y si haces un juego de 'piedra, papel o tijera' usando movimientos específicos del Micro:bit para cada opción?"</strong> ¡Consulten con Xolo para las modificaciones del GCS!</p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 5: Mejoras y Desafíos (Opcional) ⏰ 2 minutos</h3>
+                        <p>Ofrece desafíos adicionales para los alumnos que terminen antes, basados en la sección 'Mejoras' de la escaleta.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¿Ya terminaron y su proyecto funciona de maravilla? ¡Felicidades! Aquí tienen un desafío extra: <strong>¿Puedes hacer que el Micro:bit haga diferentes preguntas y reconozca múltiples movimientos o sonidos? ¿Puedes agregar un sonido para cada respuesta (además del texto/icono)? ¿Y si haces un juego de 'piedra, papel o tijera' usando movimientos específicos del Micro:bit para cada opción?</strong> ¡Consulten con Xolo cómo podrían modificar su GCS para lograrlo!</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
-                <p>Compartir juegos y reflexionar sobre la percepción vs. comprensión de la IA.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 13). Instrucción para la reflexión individual.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     ¡Diseñadores de juegos y pensadores! Antes de compartir, reflexionen:<br>
-                                    <strong>¿Qué fue lo más sorprendente de que el Micro:bit "reconociera" su movimiento o sonido?</strong><br>
-                                    <strong>¿Creen que el Micro:bit "entendió" el significado de su "sí" o "no"? ¿Por qué?</strong>
-                                </p>
-                            </div>
+        <div class="activity-card" id="activity-5">
+            <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+            <p>Compartir proyectos, recibir retroalimentación y reflexionar sobre la diferencia entre percepción y comprensión en la IA.</p>
+            <div class="steps">
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 1: Introducción al Gnius STORM ⏰ 0.5 minutos</h3>
+                        <p>(Proyectar Diapositiva 11). Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble en el Brain Spark. Ahora es el momento de compartir sus inventos en nuestro Gnius STORM. Esta es la parte donde aprendemos unos de otros y profundizamos en lo que el Micro:bit 'entiende'. La dinámica será simple: primero pensaremos un poco en nuestro propio trabajo, luego lo compartiremos en parejas, y finalmente reflexionaremos todos juntos. ¿Listos?</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 14). Instrucciones para el intercambio de juegos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    ¡Ahora, en parejas! Muestren su juego. Uno hace la pregunta con su Micro:bit y el otro responde con el movimiento o sonido al Micro:bit del compañero. Vean cómo reacciona. Expliquen los patrones que entrenaron.
-                                </p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 2: Think (Pensar Individualmente) ⏰ 1 minuto</h3>
+                        <p>Da a los alumnos un momento corto para la reflexión individual sobre su juego y la 'comprensión' del Micro:bit.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Perfecto. Antes de mostrar su proyecto, tómense 30 segundos para pensar en silencio. Miren su creación y reflexionen: <strong>¿Qué fue lo que más les gustó de su proyecto? ¿Qué patrón reconoce su Micro:bit? ¿Creen que 'entiende' lo que ese patrón significa para ustedes? ¿Por qué sí o por qué no?</strong></p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación y Discusión Grupal) ⏰ 1.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 15). Fomentar la compartición de experiencias sobre la diferencia entre reconocer y entender.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    ¡Muy bien! Ahora, compartamos: ¿Fue fácil o difícil enseñarle los patrones al Micro:bit? Cuando el Micro:bit reaccionó a su patrón de "sí", ¿qué creen que "entendió" realmente? ¿Entendió el concepto de estar de acuerdo, o solo el patrón del movimiento o sonido?
-                                </p>
-                            </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 3: Pair (Compartir en Parejas) ⏰ 1.5 minutos</h3>
+                        <p>Indica a los alumnos que se junten en parejas, intercambien sus dispositivos y expliquen sus juegos, enfocándose en qué movimiento/sonido reconoce el Micro:bit y qué significa para ellos.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Muy bien! Ahora, júntense con un compañero. Por turnos, cada uno va a mostrar su Micro:bit y explicará: <strong>'Mi juego hace [pregunta], y responde a [gesto/sonido de sí] que para mí significa 'Sí', y a [gesto/sonido de no] que significa 'No'. Creo que el Micro:bit reconoce estos patrones que entrené, pero no 'entiende' realmente mi respuesta porque...'</strong> El compañero debe probar el dispositivo y escuchar con atención.</p>
                         </div>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Gnius STORM (Cierre del Profesor/Chatbot) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 16). Cierre de la sesión enfatizando la diferencia clave.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 4: Share (Retroalimentación Constructiva) ⏰ 1 minuto</h3>
+                        <p>Guía a los alumnos para que se den retroalimentación mutua sobre el juego y la claridad de la 'respuesta' del Micro:bit, y sobre la explicación de la percepción vs. comprensión.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">Ahora, la parte más importante de aprender en equipo: la retroalimentación. Después de probar el proyecto de su compañero y escuchar su explicación, díganle algo positivo y una idea para mejorar. Usen estas frases:<br>
+                            <strong>* 'Lo que más me gustó de tu juego fue...'</strong><br>
+                            <strong>* '¡Qué buena idea usar [menciona algo específico] para tu respuesta!'</strong><br>
+                            <strong>* 'Tu explicación sobre por qué el Micro:bit no 'entiende' fue muy clara porque...'</strong><br>
+                            <strong>* 'Una idea para la próxima vez podría ser...'</strong></p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hoy fueron diseñadores de juegos y pensadores críticos! Aprendieron que el Micro:bit (y la IA en general) puede reconocer patrones que le enseñamos (ya sean de movimiento o de sonido), pero no entender el significado profundo o humano como lo hacemos nosotros. Esa diferencia entre percepción (detectar un patrón) y comprensión (darle significado) es clave para entender los límites actuales de la IA. Ustedes dieron el significado al movimiento o sonido, y la IA solo reaccionó al patrón. ¡Eso demuestra que los humanos seguimos siendo los que damos sentido al mundo y al uso de la tecnología!</p>
-                            </div>
+                    </div>
+                </div>
+                 <div class="step-card">
+                    <div class="step-content">
+                        <h3>Paso 5: Reflexión Final y Cierre ⏰ 1 minuto</h3>
+                        <p>Cierra la sesión conectando la experiencia práctica con los objetivos de aprendizaje sobre percepción y comprensión, y los Puntos Clave.</p>
+                    </div>
+                    <div class="collapsible">
+                        <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                        <div class="collapsible-content">
+                            <p class="dialogue assistant">¡Hoy fueron diseñadores de juegos y pensadores críticos! Todos lograron decir: <strong>'Yo puedo hacer un juego donde mi Micro:bit reconoce un movimiento o un sonido, y puedo explicar que el Micro:bit solo reconoce un patrón, but no entiende lo que ese patrón significa para mí.'</strong> Aprendimos que el Micro:bit, gracias a Create A.I., puede <strong>percibir</strong> patrones de movimiento o sonido que le enseñamos. Pero la <strong>comprensión</strong>, el entender el significado profundo, la emoción o la intención humana detrás de ese gesto o sonido, es algo que las IAs actuales no hacen como nosotros. Ustedes dieron el significado al movimiento o sonido en su juego, y la IA solo reaccionó al patrón. Esa diferencia es clave para entender cómo funciona la IA y también sus límites. ¡Eso demuestra que los humanos seguimos siendo los que damos sentido al mundo y al uso de la tecnología! ¡Excelente trabajo!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 
-    <script src="script.js"></script>
-</body>
+<script src="script.js"></script>
+
+
+        </body>
 </html>
